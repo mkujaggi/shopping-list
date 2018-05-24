@@ -19,7 +19,7 @@
                 <li *ngIf="isAuthenticated()" 
                 class="nav-item"><a class="nav-link" 
                 style="cursor: pointer;" (click)="onLogout()">Logout</a></li>
-                <ng-template [ngIf]="isAuthenticated()">
+                <ng-template [ngIf]="!isAuthenticated()">
                     <li>
                         <a class="nav-link" routerLink="/signup">Register</a>
                     </li>
